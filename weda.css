@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-color: #40679E;
+}
+main{
+    border-radius:10px;
+    background: linear-gradient(100deg, #008DDA, #41C9E2,#C9D7DD);
+    color: white;
+    width: 30vw;
+    margin: 0 auto;
+    height: 80vh;
+    margin-top: 40px;
+    text-align: center;
+
+}
+/* main maedia query */
+@media screen and (max-width:768px){
+    main{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        width: 80vw;
+    }
+}
+.search,.weda{
+    width: 50%;
+    margin: 0 auto; 
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.s{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    margin-inline:10px;
+    margin-left: 10px;
+    border: none;
+
+
+}
+.go{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    margin-inline:20px;
+    border: none;
+}
+.go:hover{
+    background: transparent;
+    color: white;
+    border: none;
+}
+.fore{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.weda{
+    cursor: pointer;
+    padding: 12px;
+}
+.icon{
+    font-size: 100px;
+}
+.hum{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.i{
+    font-size: 35px;
+}
+.fa-temperature-three-quarters{
+    animation-name: rotate-me;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate-me{
+    0%{
+        font-size: 35px;     
+    }
+    50%{
+        transform:scale(-10px);
+        /* font-size: 25px; */
+    } 
+    100%{
+        transform: scale(20px);
+        /* font-size: 37px; */
+
+    }
+
+}
+
+.fa-snowflake{
+    animation-name: rotate;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(180deg);
+    } 
+    50%{
+        transform: rotate(360deg);
+    } 
+    75%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+
+}
+.h{
+    margin-left: 30px;
+}
+.h:hover{
+
+}
+.speed{
+    margin-right: 30px;
+}
